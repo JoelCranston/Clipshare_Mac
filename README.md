@@ -14,6 +14,9 @@ Linux keeps running stock omaclip, unchanged. ClipShare speaks omaclip's sync pr
 directly, so it replaces omaclip's own macOS build with something that feels at home on a Mac:
 a small Swift/AppKit app that lives in the menu bar and stays out of the way.
 
+On Windows too? [ClipShare for Windows](https://github.com/JoelCranston/Clipshare_Windows) speaks
+the same protocol, so a Mac, Windows PCs and Linux machines can all share one clipboard.
+
 ## Features
 
 - **Menu bar only.** No Dock icon and no window until you ask for one. The icon dims when no peer
@@ -130,6 +133,13 @@ key, manifest JSON and checksum, JSON escaping), and run a real HTTPS server ↔
 | `Support/Info.plist` | App bundle metadata |
 | `Support/AppIcon.*` | App icon: SVG source, 1024px render, and the `.icns` used by the bundle |
 | `scripts/build-app.sh` | Builds and signs the `.app` bundle |
+
+## Related projects
+
+- [omaclip](https://github.com/rhemvi/omaclip): the Linux clipboard manager whose sync protocol
+  ClipShare speaks.
+- [ClipShare for Windows](https://github.com/JoelCranston/Clipshare_Windows): the Windows tray app,
+  built to work the same way as this one.
 
 ## Acknowledgements
 
