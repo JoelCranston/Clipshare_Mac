@@ -47,8 +47,8 @@ the same protocol, so a Mac, Windows PCs and Linux machines can all share one cl
 ## Install
 
 ```bash
-git clone https://github.com/JoelCranston/Clipshare_Mac.git
-cd Clipshare_Mac
+git clone https://github.com/JoelCranston/Clipboard_Share.git
+cd Clipboard_Share
 ./scripts/build-app.sh --install   # builds, copies to /Applications, and launches
 ```
 
