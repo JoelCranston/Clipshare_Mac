@@ -43,13 +43,21 @@ a small Swift/AppKit app that lives in the menu bar and stays out of the way.
 
 ## Install
 
+Download **ClipShare-<version>-macos.dmg** from the
+[latest release](https://github.com/JoelCranston/Clipshare_Mac/releases/latest), open it, and drag
+ClipShare to Applications. It's a universal app (Apple silicon and Intel) signed with a Developer ID.
+
+### Build from source
+
 ```bash
-git clone https://github.com/JoelCranston/Clipboard_Share.git
-cd Clipboard_Share
+git clone https://github.com/JoelCranston/Clipshare_Mac.git
+cd Clipshare_Mac
 ./scripts/build-app.sh --install   # builds, copies to /Applications, and launches
 ```
 
 `./scripts/build-app.sh` on its own just builds `build/ClipShare.app`.
+`./scripts/release.sh <version>` builds the signed release DMG in `dist/` (see the script for
+notarization).
 
 ## Setup
 
